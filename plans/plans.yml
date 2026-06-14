@@ -1,0 +1,32 @@
+name: KyberSwap API Plans
+description: KyberSwap APIs are public and free to use with no subscription tiers. Some services have default rate limits that can be raised by contacting the team.
+url: https://docs.kyberswap.com/
+
+plans:
+
+  - name: Public (Free)
+    description: All KyberSwap APIs are publicly accessible with no authentication required. No API key or subscription is needed for the Aggregator API, Limit Order API, or OnChain Price Service.
+    url: https://docs.kyberswap.com/
+    price: free
+    authentication: none
+    rate_limits:
+      - service: KyberSwap Aggregator API
+        notes: Include X-Client-Id header to avoid shared rate limiting. No published numeric limit.
+      - service: KyberSwap ZaaS API
+        requests: 10
+        window: 10 seconds
+        notes: Default rate limit; whitelist your client ID via bd@kyber.network for higher quota.
+      - service: KyberSwap Limit Order API
+        notes: No published numeric rate limit.
+      - service: KyberSwap OnChain Price Service
+        notes: No published numeric rate limit.
+
+  - name: Whitelisted (Enterprise)
+    description: Developers who require higher rate limits for the ZaaS API can contact bd@kyber.network to whitelist their X-Client-Id for an increased quota. No published pricing.
+    url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api
+    price: contact
+    contact: bd@kyber.network
+    authentication: X-Client-Id header
+    rate_limits:
+      - service: KyberSwap ZaaS API
+        notes: Custom quota negotiated with the team.

@@ -1,0 +1,43 @@
+name: KyberSwap API Rate Limits
+description: Rate limit information for KyberSwap public APIs. Most APIs are open and require no authentication; the ZaaS API enforces a default request quota.
+url: https://docs.kyberswap.com/
+
+rate_limits:
+
+  - api: KyberSwap Aggregator API
+    base_url: https://aggregator-api.kyberswap.com
+    authentication: none
+    rate_limit_published: false
+    notes: >
+      Developers are encouraged to pass the X-Client-Id request header to
+      identify their application and avoid sharing rate limit headroom with
+      anonymous clients. No specific numeric threshold is publicly documented.
+    header: X-Client-Id
+
+  - api: KyberSwap Limit Order API
+    base_url: https://limit-order.kyberswap.com
+    authentication: none
+    rate_limit_published: false
+    notes: >
+      No published rate limit. Public API requiring no key.
+
+  - api: KyberSwap Zap as a Service (ZaaS) API
+    base_url: https://zap-api.kyberswap.com
+    authentication: X-Client-Id header required
+    rate_limit_published: true
+    default:
+      requests: 10
+      window: 10 seconds
+    upgrade:
+      process: Contact bd@kyber.network to whitelist your X-Client-Id for a higher quota.
+      contact: bd@kyber.network
+    notes: >
+      The default quota is 10 requests per 10 seconds. To receive a higher
+      limit, contact the KyberSwap BD team and provide your X-Client-Id value.
+
+  - api: KyberSwap OnChain Price Service API
+    base_url: https://price.kyberswap.com
+    authentication: none
+    rate_limit_published: false
+    notes: >
+      No published rate limit. Public API requiring no key.

@@ -1,0 +1,56 @@
+name: KyberSwap FinOps / Fee Structure
+description: KyberSwap charges protocol fees on certain transaction types rather than on API access. API usage itself is free. Fees are taken at the smart-contract layer as a percentage of each transaction.
+url: https://kyberswap.com/
+
+fees:
+
+  - service: Swap (Aggregator)
+    protocol_fee: none
+    notes: >
+      KyberSwap does not charge a protocol fee on standard swaps executed via
+      the Aggregator. Underlying DEX pool fees and gas costs still apply.
+
+  - service: Limit Orders
+    protocol_fee: 0.01% - 1%
+    fee_basis: depends on volatility level of the tokens
+    notes: >
+      A protocol fee ranging from 0.01% to 1% is applied at settlement,
+      scaled by token volatility. No fee is charged for order creation or
+      cancellation.
+
+  - service: Earn / Zap (ZaaS)
+    protocol_fee: 0.01% - 0.25%
+    fee_basis: based on liquidity pair category
+    notes: >
+      Protocol fees for Zap-In, Zap-Out, and Zap-Migrate operations range
+      from 0.01% to 0.25%, categorised by the type of liquidity pair.
+
+  - service: Cross-chain Swap
+    protocol_fee: 0.05% - 0.25%
+    fee_basis: depends on route and token volatility
+    notes: >
+      Cross-chain swaps carry a protocol fee of 0.05% to 0.25%, varying by
+      the selected bridging route and asset volatility.
+
+  - service: Smart Exit
+    protocol_fee: 0.025% - 0.3%
+    fee_basis: variable
+    notes: >
+      Smart Exit operations incur a protocol fee between 0.025% and 0.3%.
+
+  - service: Value-Added Services
+    protocol_fee: none
+    services_included:
+      - Market Overview
+      - Analytics
+      - Token Checker
+      - MEV Protection
+    notes: >
+      These informational and protective services carry no protocol fee.
+
+api_pricing:
+  model: free
+  notes: >
+    All KyberSwap REST APIs (Aggregator, Limit Order, ZaaS, OnChain Price)
+    are publicly accessible at no charge. The only cost to developers is
+    standard Ethereum/EVM gas fees paid by end-users for on-chain transactions.
