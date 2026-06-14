@@ -1,0 +1,166 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "kyberswap": "https://raw.githubusercontent.com/api-evangelist/kyberswap/refs/heads/main/json-ld/kyberswap-context.jsonld#",
+
+    "SwapRoute": {
+      "@id": "kyberswap:SwapRoute",
+      "@type": "schema:Thing"
+    },
+    "LimitOrder": {
+      "@id": "kyberswap:LimitOrder",
+      "@type": "schema:Order"
+    },
+    "ZapPosition": {
+      "@id": "kyberswap:ZapPosition",
+      "@type": "schema:Thing"
+    },
+    "TokenPrice": {
+      "@id": "kyberswap:TokenPrice",
+      "@type": "schema:PriceSpecification"
+    },
+    "LiquidityPool": {
+      "@id": "kyberswap:LiquidityPool",
+      "@type": "schema:Thing"
+    },
+    "Token": {
+      "@id": "kyberswap:Token",
+      "@type": "schema:Thing"
+    },
+
+    "tokenIn": {
+      "@id": "kyberswap:tokenIn",
+      "@type": "xsd:string"
+    },
+    "tokenOut": {
+      "@id": "kyberswap:tokenOut",
+      "@type": "xsd:string"
+    },
+    "amountIn": {
+      "@id": "kyberswap:amountIn",
+      "@type": "xsd:string"
+    },
+    "amountOut": {
+      "@id": "kyberswap:amountOut",
+      "@type": "xsd:string"
+    },
+    "amountInUsd": {
+      "@id": "kyberswap:amountInUsd",
+      "@type": "xsd:decimal"
+    },
+    "amountOutUsd": {
+      "@id": "kyberswap:amountOutUsd",
+      "@type": "xsd:decimal"
+    },
+    "chainId": {
+      "@id": "kyberswap:chainId",
+      "@type": "xsd:integer"
+    },
+    "chainName": {
+      "@id": "kyberswap:chainName",
+      "@type": "xsd:string"
+    },
+    "walletAddress": {
+      "@id": "kyberswap:walletAddress",
+      "@type": "xsd:string"
+    },
+    "slippageTolerance": {
+      "@id": "kyberswap:slippageTolerance",
+      "@type": "xsd:integer"
+    },
+    "gasUsd": {
+      "@id": "kyberswap:gasUsd",
+      "@type": "xsd:decimal"
+    },
+    "priceImpact": {
+      "@id": "kyberswap:priceImpact",
+      "@type": "xsd:decimal"
+    },
+    "encodedSwapData": {
+      "@id": "kyberswap:encodedSwapData",
+      "@type": "xsd:string"
+    },
+    "routerAddress": {
+      "@id": "kyberswap:routerAddress",
+      "@type": "xsd:string"
+    },
+    "orderId": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "makerAddress": {
+      "@id": "kyberswap:makerAddress",
+      "@type": "xsd:string"
+    },
+    "takerAddress": {
+      "@id": "kyberswap:takerAddress",
+      "@type": "xsd:string"
+    },
+    "makingAmount": {
+      "@id": "kyberswap:makingAmount",
+      "@type": "xsd:string"
+    },
+    "takingAmount": {
+      "@id": "kyberswap:takingAmount",
+      "@type": "xsd:string"
+    },
+    "expiredAt": {
+      "@id": "schema:expires",
+      "@type": "xsd:integer"
+    },
+    "orderStatus": {
+      "@id": "kyberswap:orderStatus",
+      "@type": "xsd:string"
+    },
+    "signature": {
+      "@id": "kyberswap:signature",
+      "@type": "xsd:string"
+    },
+    "zapAction": {
+      "@id": "kyberswap:zapAction",
+      "@type": "xsd:string"
+    },
+    "positionId": {
+      "@id": "kyberswap:positionId",
+      "@type": "xsd:string"
+    },
+    "poolAddress": {
+      "@id": "kyberswap:poolAddress",
+      "@type": "xsd:string"
+    },
+    "tickLower": {
+      "@id": "kyberswap:tickLower",
+      "@type": "xsd:integer"
+    },
+    "tickUpper": {
+      "@id": "kyberswap:tickUpper",
+      "@type": "xsd:integer"
+    },
+    "liquidity": {
+      "@id": "kyberswap:liquidity",
+      "@type": "xsd:string"
+    },
+    "tokenAddress": {
+      "@id": "kyberswap:tokenAddress",
+      "@type": "xsd:string"
+    },
+    "price": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "priceUsd": {
+      "@id": "kyberswap:priceUsd",
+      "@type": "xsd:decimal"
+    },
+    "timestamp": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:integer"
+    },
+    "clientId": {
+      "@id": "kyberswap:clientId",
+      "@type": "xsd:string"
+    }
+  }
+}

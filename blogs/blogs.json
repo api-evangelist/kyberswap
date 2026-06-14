@@ -1,0 +1,15 @@
+{
+  "repo": "kyberswap",
+  "feeds": [
+    {
+      "source": "https://kyberswap.com/blog",
+      "feed_url": "https://kyberswap.com/blog",
+      "title": "KyberSwap Blog",
+      "saved": 0,
+      "method": "none",
+      "error": "no_feed_found"
+    }
+  ],
+  "fetched": "2026-06-14T00:00:00Z",
+  "post_count": 0
+}
