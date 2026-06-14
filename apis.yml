@@ -1,103 +1,113 @@
 name: KyberSwap
-description: KyberSwap is a multi-chain DEX aggregator and liquidity protocol offering REST APIs for swap routing, limit orders, liquidity provision via Zap-as-a-Service, and on-chain token pricing. It aggregates liquidity across 420+ sources on 17+ EVM chains, enabling developers to access best-rate swaps, manage limit orders gaslessly, and enter or exit concentrated liquidity positions with any single token.
+description: KyberSwap is a multi-chain DEX aggregator and liquidity protocol offering
+  REST APIs for swap routing, limit orders, liquidity provision via Zap-as-a-Service,
+  and on-chain token pricing. It aggregates liquidity across 420+ sources on 17+ EVM
+  chains, enabling developers to access best-rate swaps, manage limit orders gaslessly,
+  and enter or exit concentrated liquidity positions with any single token.
 image: https://kyberswap.com/favicon.ico
 tags:
-  - DeFi
-  - DEX
-  - Aggregator
-  - Swap
-  - Liquidity
-  - Blockchain
-  - Web3
-  - Multi-chain
-  - EVM
+- DeFi
+- DEX
+- Aggregator
+- Swap
+- Liquidity
+- Blockchain
+- Web3
+- Multi-chain
+- EVM
 url: https://kyberswap.com
 contact:
-  - FN: KyberSwap Business Development
-    email: bd@kyber.network
+- FN: KyberSwap Business Development
+  email: bd@kyber.network
 created: '2026-06-14'
 modified: '2026-06-14'
 specificationVersion: '0.19'
 apis:
-
-  - name: KyberSwap Aggregator API
-    description: Finds and returns the optimal swap route across 420+ liquidity sources on 17+ EVM chains. Returns the best route and encodes calldata for submission to the KyberSwap Aggregator smart contract.
-    humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator
-    baseURL: https://aggregator-api.kyberswap.com
-    tags:
-      - Swap
-      - Routing
-      - DEX Aggregator
-      - EVM
-    properties:
-      - type: Documentation
-        url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator
-      - type: OpenAPI
-        url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps
-    contact:
-      - FN: KyberSwap Support
-        email: bd@kyber.network
-    x-api-type: REST
-    x-authentication: none
-    x-rate-limit-header: X-Client-Id
-
-  - name: KyberSwap Limit Order API
-    description: Enables creation, management, and fulfillment of gasless limit orders. Exposes General, Maker, and Taker endpoint sets for reading order pairs, signing and submitting orders, and encoding fill calldata for on-chain settlement.
-    humanURL: https://docs.kyberswap.com/kyberswap-solutions/limit-order
-    baseURL: https://limit-order.kyberswap.com
-    tags:
-      - Limit Orders
-      - DeFi
-      - Trading
-      - EVM
-    properties:
-      - type: Documentation
-        url: https://docs.kyberswap.com/kyberswap-solutions/limit-order
-      - type: OpenAPI
-        url: https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification
-    contact:
-      - FN: KyberSwap Support
-        email: bd@kyber.network
-    x-api-type: REST
-    x-authentication: none
-
-  - name: KyberSwap Zap as a Service (ZaaS) API
-    description: Streamlines adding and removing concentrated liquidity positions using any single token. Provides Zap-In, Zap-Out, and Zap-Migrate endpoints via HTTP REST and gRPC. Powers KyberSwap Earn and the Liquidity Widget.
-    humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service
-    baseURL: https://zap-api.kyberswap.com
-    tags:
-      - Liquidity
-      - Zap
-      - DeFi
-      - EVM
-    properties:
-      - type: Documentation
-        url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api
-    contact:
-      - FN: KyberSwap Business Development
-        email: bd@kyber.network
-    x-api-type: REST
-    x-authentication: X-Client-Id header required
-    x-rate-limit: 10 requests per 10 seconds (default); contact bd@kyber.network for higher quota
-
-  - name: KyberSwap OnChain Price Service API
-    description: Delivers accurate, reliable, and tradable on-chain token price data for each supported network, reflecting real liquidity rather than averaged aggregations. Available on all chains supported by KyberSwap.
-    humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service
-    baseURL: https://price.kyberswap.com
-    tags:
-      - Pricing
-      - Token Prices
-      - On-chain
-      - EVM
-    properties:
-      - type: Documentation
-        url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service
-    contact:
-      - FN: KyberSwap Support
-        email: bd@kyber.network
-    x-api-type: REST
-    x-authentication: none
-
+- name: KyberSwap Aggregator API
+  description: Finds and returns the optimal swap route across 420+ liquidity sources
+    on 17+ EVM chains. Returns the best route and encodes calldata for submission
+    to the KyberSwap Aggregator smart contract.
+  humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator
+  baseURL: https://aggregator-api.kyberswap.com
+  tags:
+  - Swap
+  - Routing
+  - DEX Aggregator
+  - EVM
+  properties:
+  - type: Documentation
+    url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator
+  - type: OpenAPI
+    url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps
+  - url: graphql/kyberswap-graphql.md
+    type: GraphQL
+  contact:
+  - FN: KyberSwap Support
+    email: bd@kyber.network
+  x-api-type: REST
+  x-authentication: none
+  x-rate-limit-header: X-Client-Id
+- name: KyberSwap Limit Order API
+  description: Enables creation, management, and fulfillment of gasless limit orders.
+    Exposes General, Maker, and Taker endpoint sets for reading order pairs, signing
+    and submitting orders, and encoding fill calldata for on-chain settlement.
+  humanURL: https://docs.kyberswap.com/kyberswap-solutions/limit-order
+  baseURL: https://limit-order.kyberswap.com
+  tags:
+  - Limit Orders
+  - DeFi
+  - Trading
+  - EVM
+  properties:
+  - type: Documentation
+    url: https://docs.kyberswap.com/kyberswap-solutions/limit-order
+  - type: OpenAPI
+    url: https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification
+  contact:
+  - FN: KyberSwap Support
+    email: bd@kyber.network
+  x-api-type: REST
+  x-authentication: none
+- name: KyberSwap Zap as a Service (ZaaS) API
+  description: Streamlines adding and removing concentrated liquidity positions using
+    any single token. Provides Zap-In, Zap-Out, and Zap-Migrate endpoints via HTTP
+    REST and gRPC. Powers KyberSwap Earn and the Liquidity Widget.
+  humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service
+  baseURL: https://zap-api.kyberswap.com
+  tags:
+  - Liquidity
+  - Zap
+  - DeFi
+  - EVM
+  properties:
+  - type: Documentation
+    url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api
+  contact:
+  - FN: KyberSwap Business Development
+    email: bd@kyber.network
+  x-api-type: REST
+  x-authentication: X-Client-Id header required
+  x-rate-limit: 10 requests per 10 seconds (default); contact bd@kyber.network for
+    higher quota
+- name: KyberSwap OnChain Price Service API
+  description: Delivers accurate, reliable, and tradable on-chain token price data
+    for each supported network, reflecting real liquidity rather than averaged aggregations.
+    Available on all chains supported by KyberSwap.
+  humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service
+  baseURL: https://price.kyberswap.com
+  tags:
+  - Pricing
+  - Token Prices
+  - On-chain
+  - EVM
+  properties:
+  - type: Documentation
+    url: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service
+  contact:
+  - FN: KyberSwap Support
+    email: bd@kyber.network
+  x-api-type: REST
+  x-authentication: none
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
