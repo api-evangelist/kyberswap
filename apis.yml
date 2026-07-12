@@ -111,3 +111,6 @@ apis:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+common:
+- type: DomainSecurity
+  url: security/kyberswap-domain-security.yml
