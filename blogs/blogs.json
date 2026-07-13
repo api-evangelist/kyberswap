@@ -7,9 +7,9 @@
       "title": "KyberSwap Blog",
       "saved": 0,
       "method": "none",
-      "error": "no_feed_found"
+      "error": "parse_failed"
     }
   ],
-  "fetched": "2026-06-14T00:00:00Z",
+  "fetched": "2026-07-11T11:43:46Z",
   "post_count": 0
 }
