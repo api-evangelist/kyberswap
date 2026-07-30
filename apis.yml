@@ -4,6 +4,18 @@ description: KyberSwap is a multi-chain DEX aggregator and liquidity protocol of
   and on-chain token pricing. It aggregates liquidity across 420+ sources on 17+ EVM
   chains, enabling developers to access best-rate swaps, manage limit orders gaslessly,
   and enter or exit concentrated liquidity positions with any single token.
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://kyberswap.com/favicon.ico
 tags:
 - DeFi
