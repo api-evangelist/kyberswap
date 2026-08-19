@@ -33,7 +33,7 @@ contact:
   email: bd@kyber.network
 created: '2026-06-14'
 modified: '2026-06-14'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - name: KyberSwap Aggregator API
   description: Finds and returns the optimal swap route across 420+ liquidity sources
