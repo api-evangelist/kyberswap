@@ -25,6 +25,16 @@ tags:
 - Liquidity
 - Blockchain
 - Web3
+- Multi-Chain
+- EVM
+tags_raw:
+- DeFi
+- DEX
+- Aggregator
+- Swap
+- Liquidity
+- Blockchain
+- Web3
 - Multi-chain
 - EVM
 url: https://kyberswap.com
@@ -108,6 +118,11 @@ apis:
   humanURL: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-onchain-price-service
   baseURL: https://price.kyberswap.com
   tags:
+  - Pricing
+  - Token Prices
+  - Onchain
+  - EVM
+  tags_raw:
   - Pricing
   - Token Prices
   - On-chain
