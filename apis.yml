@@ -36,7 +36,7 @@ tags:
 - Liquidity
 - Blockchain
 - Web3
-- Multi-Chain
+- Multi-chain
 - EVM
 tags_raw:
 - DeFi
@@ -131,7 +131,7 @@ apis:
   tags:
   - Pricing
   - Token Prices
-  - Onchain
+  - On-chain
   - EVM
   tags_raw:
   - Pricing
