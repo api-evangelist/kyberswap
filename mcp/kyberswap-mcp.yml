@@ -1,0 +1,30 @@
+generated: '2026-09-11'
+method: probed
+source: https://docs.kyberswap.com/~gitbook/mcp
+status: published
+server:
+  name: kyberswap
+  transport: http
+  url: https://docs.kyberswap.com/~gitbook/mcp
+deployment:
+  mode: remote
+  endpoint: https://docs.kyberswap.com/~gitbook/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 4
+tools:
+- name: searchDocumentation
+  description: ''
+- name: getPage
+  description: ''
+- name: askQuestion
+  description: ''
+- name: sendFeedback
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: platform
+authorship_note: 'PLATFORM-AUTHORED: this tool shape is shared with at least one other provider in the
+  catalog, so it is a platform default appearing under this provider''s domain rather than an interface
+  this provider designed. Shared shape: (''askQuestion'', ''getPage'', ''searchDocumentation'', ''sendFeedback'')'
