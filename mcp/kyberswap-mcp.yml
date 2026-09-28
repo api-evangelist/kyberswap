@@ -16,15 +16,25 @@ deployment:
 tools_count: 4
 tools:
 - name: searchDocumentation
-  description: ''
+  description: Search across the documentation to find relevant information, code examples, API references,
+    and guides. Use this tool when you need to answer questions about KyberSwap Docs, find specific documentation,
+    understand how features work, or loc
 - name: getPage
-  description: ''
+  description: Fetch the full markdown content of a specific documentation page from KyberSwap Docs. Use
+    this when you have a page URL and want to read its content. Accepts full URLs (e.g. https://docs.kyberswap.com//getting-started).
+    Since `searchDocumen
 - name: askQuestion
-  description: ''
+  description: Ask a natural-language question about KyberSwap Docs and get a synthesized answer, with
+    links to the source pages. Prefer this over `searchDocumentation` when you want a direct answer to
+    a question rather than a list of matching pages; use
 - name: sendFeedback
-  description: ''
+  description: Report an issue in the documentation of KyberSwap Docs so the team can fix it. Use it whenever,
+    while helping a user, you come across content that is outdated, contradictory, missing information,
+    or otherwise unhelpful. Also use it when the
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: platform
 authorship_note: 'PLATFORM-AUTHORED: this tool shape is shared with at least one other provider in the
   catalog, so it is a platform default appearing under this provider''s domain rather than an interface
   this provider designed. Shared shape: (''askQuestion'', ''getPage'', ''searchDocumentation'', ''sendFeedback'')'
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
