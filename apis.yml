@@ -52,7 +52,7 @@ contact:
 - FN: KyberSwap Business Development
   email: bd@kyber.network
 created: '2026-06-14'
-modified: '2026-09-16'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - name: KyberSwap Aggregator API
@@ -147,6 +147,8 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 common:
+- url: https://blog.kyberswap.com/feed/
+  type: BlogRSS
 - type: Website
   url: https://kyberswap.com
 - type: DomainSecurity
