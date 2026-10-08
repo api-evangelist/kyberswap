@@ -34,3 +34,23 @@ plans:
     rate_limits:
       - service: KyberSwap ZaaS API
         notes: Custom quota negotiated with the team.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Public (Free)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Whitelisted (Enterprise)
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
