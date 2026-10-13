@@ -6,9 +6,9 @@ edges:
   direction: partner-built
   type: coverage
   relationship: connector-coverage
-  evidence: https://api.coingecko.com/api/v3/exchanges/kyberswap_classic_avalanche
+  evidence: https://api.coingecko.com/api/v3/exchanges/kyberswap_classic_ethereum
   matched_by: domain:kyberswap.com
-  coingecko_id: kyberswap_classic_avalanche
+  coingecko_id: kyberswap_classic_ethereum
   trust_score: 2
   detected_by: sweep-crypto.py
   first_seen: '2026-10-13'
