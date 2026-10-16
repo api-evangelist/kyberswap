@@ -2,14 +2,20 @@
   "repo": "kyberswap",
   "feeds": [
     {
+      "source": "https://blog.kyberswap.com/feed/",
+      "feed_url": "https://blog.kyberswap.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    },
+    {
       "source": "https://kyberswap.com/blog",
       "feed_url": "https://kyberswap.com/blog",
-      "title": "KyberSwap Blog",
+      "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:15:37Z",
-  "post_count": 0
+  "fetched": "2026-10-10T13:15:00Z",
+  "post_count": 2
 }
