@@ -9,7 +9,7 @@
   partner_name: CoinGecko
   type: coverage
   channel: partner-built
-  evidence: https://api.coingecko.com/api/v3/exchanges/kyberswap_classic_avalanche
+  evidence: https://api.coingecko.com/api/v3/exchanges/kyberswap_classic_ethereum
   source: edge
   relationship: connector-coverage
   status: not-a-workflow
