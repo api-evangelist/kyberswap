@@ -64,30 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-KyberSwap is a multi-chain DEX aggregator and liquidity protocol. It aggregates liquidity from 420+ sources across 17+ EVM chains to find optimal swap routes, and provides additional DeFi primitives including gasless limit orders, concentrated liquidity Zap-in/out, and on-chain token pricing.
+KyberSwap is a multi-chain DEX aggregator and liquidity protocol offering REST APIs for swap routing, limit orders, liquidity provision via Zap-as-a-Service, and on-chain token pricing. It aggregates liquidity across 420+ sources on 17+ EVM chains, enabling developers to access best-rate swaps, manage limit orders gaslessly, and enter or exit concentrated liquidity positions with any single token.
 
-All KyberSwap APIs are publicly accessible and require no API key or subscription. Protocol fees are charged at the smart-contract layer for certain transaction types, not on API access.
+**Areas:** DeFi · Decentralized Exchange · Aggregator · Swap · Liquidity · Blockchain · Web3 · Multi-Chain · EVM
 
-## APIs
+## KyberSwap on APIs.io
 
-| API | Base URL | Purpose |
-|-----|----------|---------|
-| Aggregator API | `https://aggregator-api.kyberswap.com` | Best-rate swap routing across 420+ liquidity sources |
-| Limit Order API | `https://limit-order.kyberswap.com` | Gasless limit order creation and fulfillment |
-| ZaaS API | `https://zap-api.kyberswap.com` | Zap-In/Out/Migrate for concentrated liquidity positions |
-| OnChain Price Service | `https://price.kyberswap.com` | Real on-chain token prices per network |
+Everything profiled for KyberSwap is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kyberswap/](https://apis.io/providers/kyberswap/)** — or go straight to one of the APIs or properties below.
 
-## Supported Chains
+### APIs (4)
 
-Ethereum, BNB Chain, Arbitrum, Polygon PoS, Optimism, Avalanche, Base, Linea, Mantle, Sonic, Berachain, Ronin, Unichain, HyperEVM, Plasma, Etherlink, Monad, MegaETH.
+- [KyberSwap Aggregator API](https://apis.io/apis/kyberswap/kyberswap-aggregator-api/) — Finds and returns the optimal swap route across 420+ liquidity sources on 17+ EVM chains. Returns the best route and encodes calldata for submission to the…
+- [KyberSwap Limit Order API](https://apis.io/apis/kyberswap/kyberswap-limit-order-api/) — Enables creation, management, and fulfillment of gasless limit orders. Exposes General, Maker, and Taker endpoint sets for reading order pairs, signing and…
+- [KyberSwap Zap as a Service (ZaaS) API](https://apis.io/apis/kyberswap/kyberswap-zap-as-a-service-zaas-api/) — Streamlines adding and removing concentrated liquidity positions using any single token. Provides Zap-In, Zap-Out, and Zap-Migrate endpoints via HTTP REST…
+- [KyberSwap OnChain Price Service API](https://apis.io/apis/kyberswap/kyberswap-onchain-price-service-api/) — Delivers accurate, reliable, and tradable on-chain token price data for each supported network, reflecting real liquidity rather than averaged aggregations.…
 
-## Documentation
+### Published properties
 
-- Developer docs: https://docs.kyberswap.com
-- Aggregator API spec: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps
-- Limit Order API spec: https://docs.kyberswap.com/kyberswap-solutions/limit-order/limit-order-api-specification
-- ZaaS HTTP API: https://docs.kyberswap.com/kyberswap-solutions/kyberswap-zap-as-a-service/kyberswap-zap-as-a-service-zaas-api/zaas-http-api
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Contact
+#### GraphQL (1)
 
-Business Development: bd@kyber.network
+GraphQL schemas.
+
+- [KyberSwap GraphQL API](https://apis.io/graphqls/kyberswap/kyberswap-graphql/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [kyberswap](https://apis.io/servers/kyberswap/kyberswap/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Kyberswap Context](https://apis.io/jsonld/kyberswap/kyberswap-context/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kyberswap Domain Security](https://apis.io/security/kyberswap/kyberswap-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/kyberswap/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/kyberswap/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/kyberswap/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kyberswap.com)
+
+## API Evangelist rating
+
+**Kin Score 21.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 80.0 |
+| Contract quality | 43.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 15.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kyberswap/](https://apis.io/providers/kyberswap/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for KyberSwap: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kyberswap/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
